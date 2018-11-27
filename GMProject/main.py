@@ -17,6 +17,14 @@ with open('race_list.json', 'r') as data_file:
 with open('class_list.json', 'r') as data_file:
   class_list = json.load(data_file)
 #character creation
+#default values
+Strength = 0
+Dexterity = 0
+Constitution = 0
+Intelligence = 0
+Wisdom = 0
+Charisma = 0
+
 def abilityroll(ability):
   dieRoll1 = random.randint(1,6)
   dieRoll2 = random.randint(1,6)
@@ -54,12 +62,7 @@ myClass = class_list[str(pChoice)]
 print('You Chose the ' + myClass["Name"] + ' Class!')
 print(myName + ' you have decided on a ' + myRace["Name"] + ":" + myClass["Name"])
 print("OK, Let us find our ability scores!")
-Strength = 0
-Dexterity = 0
-Constitution = 0
-Intelligence = 0
-Wisdom = 0
-Charisma = 0
+
 abilityroll(Strength)
 abilityroll(Dexterity)
 abilityroll(Constitution)
