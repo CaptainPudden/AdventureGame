@@ -1,0 +1,34 @@
+{
+    "1": {
+        "Armor": 5,
+        "Damage": -5,
+        "Gold": 200,
+        "Health": 10,
+        "Trapped": 15,
+        "Name": "Shield"
+    },
+    "2": {
+        "Armor": -3,
+        "Damage": 5,
+        "Gold": 100,
+        "Health": 5,
+        "Trapped": 15,
+        "Name": "Amulet"
+    },
+    "3": {
+        "Armor": 6,
+        "Damage": 0,
+        "Gold": 200,
+        "Health": 15,
+        "Trapped": 15,
+        "Name": "Plate of the Whale"
+    },
+    "4": {
+        "Armor": -2,
+        "Damage": 10,
+        "Gold": 200,
+        "Health": 20,
+        "Trapped": 15,
+        "Name": "Weapon Mod Fire"
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "1": {
+        "Armor": 0,
+        "Damage": 4,
+        "Gold": 10,
+        "Health": 40,
+        "Level": 1,
+        "Name": "GobGob"
+    },
+    "2": {
+        "Armor": 3,
+        "Damage": 10,
+        "Gold": 10,
+        "Health": 50,
+        "Level": 1,
+        "Name": "RatBoy"
+    },
+    "3": {
+        "Armor": 4,
+        "Damage": 6,
+        "Gold": 16,
+        "Health": 20,
+        "Level": 1,
+        "Name": "Slave Girl"
+    },
+    "4": {
+        "Armor": 4,
+        "Damage": 6,
+        "Gold": 16,
+        "Health": 20,
+        "Level": 1,
+        "Name": "FireFighter"
+    }
+}
