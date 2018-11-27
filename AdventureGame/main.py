@@ -9,19 +9,19 @@ try:
 except NameError:
     to_unicode = str
 
-with open('character_list.json', 'r') as data_file:
+with open('AdventureGame/character_list.json', 'r') as data_file:
   characters = json.load(data_file)
-with open('static_encounters.json', 'r') as data_file:
+with open('AdventureGame/static_encounters.json', 'r') as data_file:
   static_encounters = json.load(data_file)
-with open('random_encounters.json', 'r') as data_file:
+with open('AdventureGame/random_encounters.json', 'r') as data_file:
   random_encounters = json.load(data_file)
-with open('monster_list.json', 'r') as data_file:
+with open('AdventureGame/monster_list.json', 'r') as data_file:
   monster_list = json.load(data_file)
-with open('special_encounters.json', 'r') as data_file:
+with open('AdventureGame/special_encounters.json', 'r') as data_file:
   special_encounters = json.load(data_file)
-with open('riddle_list.json', 'r') as data_file:
+with open('AdventureGame/riddle_list.json', 'r') as data_file:
   riddle_list = json.load(data_file)
-with open('treasure_list.json', 'r') as data_file:
+with open('AdventureGame/treasure_list.json', 'r') as data_file:
   treasure_list = json.load(data_file)
 #greetings
 class myList(list):
@@ -90,7 +90,7 @@ if gamemode == '3':
   #Load game?
   print('Load game, name your save file')
   try:
-    saveGameName = input() + '.json'
+    saveGameName = 'AdventureGame/' + input() + '.json'
     with open(saveGameName, 'r') as data_file:
       stats = json.load(data_file)
       armor = stats['Armor']
@@ -128,16 +128,16 @@ if gamemode == '4':
     X = ', '.join( str(a) for a in randomRoomList )
     print('Other Rooms: ' + X)
     myRoom = input()
-    with open('monster_list.json', 'r') as data_file:
+    with open('AdventureGame/monster_list.json', 'r') as data_file:
       monster_list = json.load(data_file)
-    with open('elite_list.json', 'r') as data_file:
+    with open('AdventureGame/elite_list.json', 'r') as data_file:
       elite_list = json.load(data_file)
     mDict = monster_list[str(random.randint(1, len(monster_list)))]
     eDict = elite_list[str(random.randint(1, len(elite_list)))]
     if myRoom == 'Save':
       stats = {'myName': myName, 'myChoice' : myChoice, 'Health' : health, 'Max Health' : maxhealth, 'Damage' : damage, 'Armor' : armor, 'Gold' : gold, 'Level' : level, 'nextroom' : nextroom}
       print('Name your save file')
-      saveGameName = input() + '.json'
+      saveGameName = 'AdventureGame/' + input() + '.json'
       save_dict(saveGameName, stats)
       print('You see 4 doors: Pick one.')
       
@@ -168,7 +168,7 @@ if gamemode == '4':
         armor += yTreasure['Armor']
         statcall()
       if specialEncounter == 2:
-        print('It is an Elite!!! \n The ' + edict['Name'] + 'wants to fight!!')
+        print('It is an Elite!!! \n The ' + eDict['Name'] + 'wants to fight!!')
         while eDict['Health'] >= 1 and health >= 1:
           print('Fight or Defend')
           combatChoice = input()
