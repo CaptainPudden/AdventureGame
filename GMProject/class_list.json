@@ -1,0 +1,167 @@
+{
+    "1": {
+        "Hit Dice": 12,
+        "Armor": ["Light", "Medium", "Shields"],
+        "Weapons": ["Simple", "Martial"],
+        "Tools": ["None"],
+        "Saving Throws": ["Strength", "Constitution"],
+        "Skills": ["Animal Handling", "Athletics", "Intimidation", "Nature", "Perception", "Survival"],
+        "Equipment": {
+           "1": ["Greataxe", "Any Martial Weapon"],
+           "2": ["Two Handaxes", "Any Simple Weapon"],
+           "3": "Explorers Pack and Four Javelins"
+        },
+        "Features": ["Rage","Unarmored Defense"],
+        "Name": "Barbarian"
+    },
+    "2": {
+        "Hit Dice": 12,
+        "Armor": ["Light", "Medium", "Shields"],
+        "Weapons": ["Simple", "Martial"],
+        "Tools": ["None"],
+        "Saving Throws": ["Strength", "Constitution"],
+        "Skills": ["Animal Handling", "Athletics", "Intimidation", "Nature", "Perception", "Survival"],
+        "Equipment": {
+           "1": ["Greataxe", "Any Martial Weapon"],
+           "2": ["Two Handaxes", "Any Simple Weapon"],
+           "3": "Explorers Pack and Four Javelins"
+        },
+        "Features": ["Rage","Unarmored Defense"],
+        "Name": "Barbarian"
+    },
+    "3": {
+        "Hit Dice": 12,
+        "Armor": ["Light", "Medium", "Shields"],
+        "Weapons": ["Simple", "Martial"],
+        "Tools": ["None"],
+        "Saving Throws": ["Strength", "Constitution"],
+        "Skills": ["Animal Handling", "Athletics", "Intimidation", "Nature", "Perception", "Survival"],
+        "Equipment": {
+           "1": ["Greataxe", "Any Martial Weapon"],
+           "2": ["Two Handaxes", "Any Simple Weapon"],
+           "3": "Explorers Pack and Four Javelins"
+        },
+        "Features": ["Rage","Unarmored Defense"],
+        "Name": "Barbarian"
+    },
+    "4": {
+        "Hit Dice": 12,
+        "Armor": ["Light", "Medium", "Shields"],
+        "Weapons": ["Simple", "Martial"],
+        "Tools": ["None"],
+        "Saving Throws": ["Strength", "Constitution"],
+        "Skills": ["Animal Handling", "Athletics", "Intimidation", "Nature", "Perception", "Survival"],
+        "Equipment": {
+           "1": ["Greataxe", "Any Martial Weapon"],
+           "2": ["Two Handaxes", "Any Simple Weapon"],
+           "3": "Explorers Pack and Four Javelins"
+        },
+        "Features": ["Rage","Unarmored Defense"],
+        "Name": "Barbarian"
+    },
+    "5": {
+        "Hit Dice": 12,
+        "Armor": ["Light", "Medium", "Shields"],
+        "Weapons": ["Simple", "Martial"],
+        "Tools": ["None"],
+        "Saving Throws": ["Strength", "Constitution"],
+        "Skills": ["Animal Handling", "Athletics", "Intimidation", "Nature", "Perception", "Survival"],
+        "Equipment": {
+           "1": ["Greataxe", "Any Martial Weapon"],
+           "2": ["Two Handaxes", "Any Simple Weapon"],
+           "3": "Explorers Pack and Four Javelins"
+        },
+        "Features": ["Rage","Unarmored Defense"],
+        "Name": "Barbarian"
+    },
+    "6": {
+        "Hit Dice": 12,
+        "Armor": ["Light", "Medium", "Shields"],
+        "Weapons": ["Simple", "Martial"],
+        "Tools": ["None"],
+        "Saving Throws": ["Strength", "Constitution"],
+        "Skills": ["Animal Handling", "Athletics", "Intimidation", "Nature", "Perception", "Survival"],
+        "Equipment": {
+           "1": ["Greataxe", "Any Martial Weapon"],
+           "2": ["Two Handaxes", "Any Simple Weapon"],
+           "3": "Explorers Pack and Four Javelins"
+        },
+        "Features": ["Rage","Unarmored Defense"],
+        "Name": "Barbarian"
+    },
+    "7": {
+        "Hit Dice": 12,
+        "Armor": ["Light", "Medium", "Shields"],
+        "Weapons": ["Simple", "Martial"],
+        "Tools": ["None"],
+        "Saving Throws": ["Strength", "Constitution"],
+        "Skills": ["Animal Handling", "Athletics", "Intimidation", "Nature", "Perception", "Survival"],
+        "Equipment": {
+           "1": ["Greataxe", "Any Martial Weapon"],
+           "2": ["Two Handaxes", "Any Simple Weapon"],
+           "3": "Explorers Pack and Four Javelins"
+        },
+        "Features": ["Rage","Unarmored Defense"],
+        "Name": "Barbarian"
+    },
+    "8": {
+        "Hit Dice": 12,
+        "Armor": ["Light", "Medium", "Shields"],
+        "Weapons": ["Simple", "Martial"],
+        "Tools": ["None"],
+        "Saving Throws": ["Strength", "Constitution"],
+        "Skills": ["Animal Handling", "Athletics", "Intimidation", "Nature", "Perception", "Survival"],
+        "Equipment": {
+           "1": ["Greataxe", "Any Martial Weapon"],
+           "2": ["Two Handaxes", "Any Simple Weapon"],
+           "3": "Explorers Pack and Four Javelins"
+        },
+        "Features": ["Rage","Unarmored Defense"],
+        "Name": "Barbarian"
+    },
+    "9": {
+        "Hit Dice": 12,
+        "Armor": ["Light", "Medium", "Shields"],
+        "Weapons": ["Simple", "Martial"],
+        "Tools": ["None"],
+        "Saving Throws": ["Strength", "Constitution"],
+        "Skills": ["Animal Handling", "Athletics", "Intimidation", "Nature", "Perception", "Survival"],
+        "Equipment": {
+           "1": ["Greataxe", "Any Martial Weapon"],
+           "2": ["Two Handaxes", "Any Simple Weapon"],
+           "3": "Explorers Pack and Four Javelins"
+        },
+        "Features": ["Rage","Unarmored Defense"],
+        "Name": "Barbarian"
+    },
+    "A": {
+        "Hit Dice": 12,
+        "Armor": ["Light", "Medium", "Shields"],
+        "Weapons": ["Simple", "Martial"],
+        "Tools": ["None"],
+        "Saving Throws": ["Strength", "Constitution"],
+        "Skills": ["Animal Handling", "Athletics", "Intimidation", "Nature", "Perception", "Survival"],
+        "Equipment": {
+           "1": ["Greataxe", "Any Martial Weapon"],
+           "2": ["Two Handaxes", "Any Simple Weapon"],
+           "3": "Explorers Pack and Four Javelins"
+        },
+        "Features": ["Rage","Unarmored Defense"],
+        "Name": "Barbarian"
+    },
+    "B": {
+        "Hit Dice": 12,
+        "Armor": ["Light", "Medium", "Shields"],
+        "Weapons": ["Simple", "Martial"],
+        "Tools": ["None"],
+        "Saving Throws": ["Strength", "Constitution"],
+        "Skills": ["Animal Handling", "Athletics", "Intimidation", "Nature", "Perception", "Survival"],
+        "Equipment": {
+           "1": ["Greataxe", "Any Martial Weapon"],
+           "2": ["Two Handaxes", "Any Simple Weapon"],
+           "3": "Explorers Pack and Four Javelins"
+        },
+        "Features": ["Rage","Unarmored Defense"],
+        "Name": "Barbarian"
+    }
+}
