@@ -8,6 +8,8 @@ import os
 
 os.chdir('GMProject/')
 
+import dice
+
 try:
     to_unicode = unicode
 except NameError:
@@ -64,60 +66,16 @@ if 0 == 0:
     print(myName + ' you have decided on a ' + myRace["Name"] + ":" + myClass["Name"])
     print("OK, Let us find our ability scores!")
 
-    dieRoll1 = random.randint(1,6)
-    dieRoll2 = random.randint(1,6)
-    dieRoll3 = random.randint(1,6)
-    dieRoll4 = random.randint(1,6)
-    rollList = [dieRoll1, dieRoll2, dieRoll3, dieRoll4]
-    print(rollList)
-    rollList.remove(min(rollList))
-    Strength = sum(rollList)
-
-    dieRoll1 = random.randint(1,6)
-    dieRoll2 = random.randint(1,6)
-    dieRoll3 = random.randint(1,6)
-    dieRoll4 = random.randint(1,6)
-    rollList = [dieRoll1, dieRoll2, dieRoll3, dieRoll4]
-    print(rollList)
-    rollList.remove(min(rollList))
-    Dexterity = sum(rollList)
-
-    dieRoll1 = random.randint(1,6)
-    dieRoll2 = random.randint(1,6)
-    dieRoll3 = random.randint(1,6)
-    dieRoll4 = random.randint(1,6)
-    rollList = [dieRoll1, dieRoll2, dieRoll3, dieRoll4]
-    print(rollList)
-    rollList.remove(min(rollList))
-    Constitution = sum(rollList)
-
-    dieRoll1 = random.randint(1,6)
-    dieRoll2 = random.randint(1,6)
-    dieRoll3 = random.randint(1,6)
-    dieRoll4 = random.randint(1,6)
-    rollList = [dieRoll1, dieRoll2, dieRoll3, dieRoll4]
-    print(rollList)
-    rollList.remove(min(rollList))
-    Intelligence = sum(rollList)
-
-    dieRoll1 = random.randint(1,6)
-    dieRoll2 = random.randint(1,6)
-    dieRoll3 = random.randint(1,6)
-    dieRoll4 = random.randint(1,6)
-    rollList = [dieRoll1, dieRoll2, dieRoll3, dieRoll4]
-    print(rollList)
-    rollList.remove(min(rollList))
-    Wisdom = sum(rollList)
-
-    dieRoll1 = random.randint(1,6)
-    dieRoll2 = random.randint(1,6)
-    dieRoll3 = random.randint(1,6)
-    dieRoll4 = random.randint(1,6)
-    rollList = [dieRoll1, dieRoll2, dieRoll3, dieRoll4]
-    print(rollList)
-    rollList.remove(min(rollList))
-    Charisma = sum(rollList)
-    abilityScores = {"Strength" : Strength, "Dexterity" : Dexterity, "Constitution" : Constitution, "Intelligence" : Intelligence, "Wisdom" : Wisdom, "Charisma" : Charisma}
+    abilityScores = {"Strength" : 0, "Dexterity" : 0, "Constitution" : 0, "Intelligence" : 0, "Wisdom" : 0, "Charisma" : 0}
+    for a,b in abilityScores.items():
+      abRoll = dice.Dice()
+      abRoll.roll(4)
+      b = abRoll.total
+      print(f"{a}: {b}")
+      c = {a: b}
+      abilityScores.update(c)
+    
+    
     for a in abilityScores.items():
       print(str(a))
     character_list.append(myName)
