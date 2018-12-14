@@ -5,18 +5,29 @@ import glob
 from collections import OrderedDict
 from shutil import get_terminal_size 
 import os
-
-os.chdir('GMProject/')
-
+from savefile import save_dict
+import decode
 import dice
+from pprint import pprint
+try:
+  os.chdir('GMProject/')
+except FileNotFoundError:
+  print('Already There')
+
+
+
+pathJson = 'dnd-5e-srd/json/'
+fileRaces = '01 races.json'
+nameRaces = 'Races'
 
 try:
     to_unicode = unicode
 except NameError:
     to_unicode = str
-with open('race_list.json', 'r') as data_file:
+    
+with open(pathJson + '01 races.json', 'r') as data_file:
   race_list = json.load(data_file)
-with open('class_list.json', 'r') as data_file:
+with open(pathJson + '02 classes.json', 'r') as data_file:
   class_list = json.load(data_file)
 try:
   with open('character_list.json', 'r') as data_file:
@@ -27,12 +38,7 @@ except  FileNotFoundError:
   with io.open('character_list.json', 'w', encoding='utf8') as f:
     f.write(json.dumps(character_list, ensure_ascii=False))
 #character creation
-def save_dict(fileName, dictName):
-  with io.open(fileName, 'w', encoding='utf8') as outfile:
-    str_ = json.dumps(dictName,
-                    indent=4, sort_keys=True,
-                    separators=(',', ': '), ensure_ascii=False)
-    outfile.write(to_unicode(str_))
+
 #default values
   
 #name/playername
@@ -44,15 +50,19 @@ if 0 == 0:
     print('Lets Pick a Race!')
     print(character_list)
     #list race for choice
-    for list in race_list:
-        for x in list:
-            listed_races = race_list[x]
-            for z,y in listed_races.items():
-              if z == "Name":
-                print(x + ":" + y)
+    decode.callRacelist(pathJson, fileRaces, nameRaces)
+    count = 0
+    for x in decode.rList:
+      count += 1
+      print(str(count) + ':' + x)
     pChoice = input()
-    myRace = race_list[str(pChoice)]
-    print('You Chose the ' + myRace["Name"] + ' Race!')
+    myRace = decode.rList[int(pChoice) - 1]
+    print('You Chose the ' + myRace + ' Race!')
+    print('Racial Traits Include')
+    decode.callRacetraits(pathJson, fileRaces, nameRaces, myRace)
+    rTraits = decode.traits
+    for x in rTraits:
+      pprint(x.lstrip(), width=180)
     print('Lets Pick A Class!')
     for dict in class_list.keys():
         for x in dict:

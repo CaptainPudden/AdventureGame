@@ -5,9 +5,11 @@ import glob
 from collections import OrderedDict
 from shutil import get_terminal_size 
 import os
-
-os.chdir('AdventureGame/')
-
+try:
+  os.chdir('AdventureGame/')
+except FileNotFoundError:
+  print('Already There')
+  
 try:
     to_unicode = unicode
 except NameError:

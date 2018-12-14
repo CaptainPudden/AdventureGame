@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  SURE THING GUYS
+  {% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/button.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'polls/test.css' %}"> 
+</head>
+  
+<body>
+{% if latest_question_list %}
+    <div class="container">
+      
+    {% for question in latest_question_list %}
+        <div>          
+          <fieldset>
+            <a href="/polls/{{ question.id }}/">{{ question.question_text }}</a>
+            <a href="/polls/{{ question.id }}/results/" class="button up"></a>
+            <a href="/polls/{{ question.id }}/vote/" class="button down"></a>
+          </fieldset>
+        </div>
+    {% endfor %}
+  </div> 
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+</body>
+
+</html>
